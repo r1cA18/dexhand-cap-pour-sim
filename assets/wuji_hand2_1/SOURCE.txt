@@ -1,0 +1,4 @@
+Source: https://github.com/wuji-technology/wuji-description
+Commit: 829c9aa27cb12c3a49d5b8d63c9869dd8f656702 (2026-10-12)
+Path: hand2/hand2_1/body/{mjcf,meshes}
+License: MIT (LICENSE in this directory)

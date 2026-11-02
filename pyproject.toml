@@ -1,0 +1,23 @@
+[project]
+name = "dexhand-sim"
+version = "0.1.0"
+description = "MuJoCo scene of a dual-arm upper body with a Wuji Hand 2.1 on each arm: cap opening and pouring"
+requires-python = ">=3.10"
+dependencies = [
+    "mujoco==3.16.0",
+    "numpy",
+    "scipy",
+    "pillow",
+    "imageio[ffmpeg]",
+    "trimesh",
+    "fast-simplification",
+]
+
+[project.optional-dependencies]
+# Recording, training and evaluation.
+train = ["lerobot==0.5.1"]
+# PPO for rl_hold (trained on a CUDA GPU; running the trained policy needs no GPU).
+rl = ["stable-baselines3==2.9.0", "gymnasium==1.4.0"]
+
+[tool.setuptools]
+packages = ["dexhand_sim"]

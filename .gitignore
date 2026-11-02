@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+data/
+out/
+outputs/*
+!outputs/rl_hold/
+outputs/rl_hold/*
+!outputs/rl_hold/final.zip
+MUJOCO_LOG.TXT
+.DS_Store
