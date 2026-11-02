@@ -25,8 +25,6 @@ uv venv --python 3.12 .venv
 uv pip install -e ".[train,rl]"
 ```
 
-ロボット本体のモデル(URDF、ホーム姿勢、頭カメラの設定)はこのリポジトリに含みません。実行するには`assets/robot/`に置いてください。
-
 ## 再現手順
 
 スクリプトの見本動作(GPU不要):
